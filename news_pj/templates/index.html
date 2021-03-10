@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포털 3사 인기 뉴스 크롤링</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+</head>
+
+<body>
+    <div class="naver_section">
+        <form action="/naver" method="POST">
+            <h2>네이버 뉴스 크롤링</h2>
+            <button type="submit" class="naver_crawling">
+                <h4>네이버 헤드라인 뉴스 크롤링 시작</h4>
+            </button>
+        </form>
+    </div>
+    <div class="daum_section">
+        <form action="/daum" method="POST">
+            <h2>다음 뉴스 크롤링</h2>
+            <button type="submit" class="daum_crawling">
+                <h4>다음 인기 뉴스 크롤링 시작</h4>
+            </button>
+        </form>
+    </div>
+    <div class="nate_section">
+        <form action="/nate" method="POST">
+            <h2>네이트 뉴스 크롤링</h2>
+            <button type="submit" class="nate_crawling">
+                <h4>네이트 인기 뉴스 크롤링 시작</h4>
+            </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
